@@ -1,4 +1,3 @@
-import HeroSection from "@/components/HeroSection";
 import Services from "@/components/Services";
 import { ThreeDCardDemo } from "@/components/ThreeDCardDemo";
 import Image from "next/image";
@@ -13,7 +12,7 @@ export default function Home() {
    rounded-md relative  -mb-32 sm:mb-0 overflow-clip">
       <GoogleGeminiEffectDemo/>
       </div>
-      <AboutUs/>
+      {/* <AboutUs/> */}
       <Services/>
     <ThreeDCardDemo/>
     </main>

@@ -42,8 +42,8 @@ const Services = () => {
                         </div> */}
                        
                     <BackgroundGradient
-                    className="flex flex-col rounded-[22px] bg-white
-                      dark:bg-transparent dark:text-white  overflow-hidden items-center h-full max-w-sm p-4 sm:p-12 " 
+                    className="flex flex-col rounded-[22px] bg-zinc-900/[0.8]
+                       dark:text-white  overflow-hidden items-center h-full max-w-sm p-4 sm:p-12 " 
                     >
                        <Image
           src={service.icon}
