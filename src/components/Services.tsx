@@ -19,12 +19,12 @@ const Services = () => {
     <div className="py-12 text-white bg-black/[0.96]">
         <div>
             <div className="text-center">
-                  <h2 className="text-2xl  font-bold text-transparent md:text-6xl
+                  <h2 className="text-2xl  font-bold text-transparent md:text-5xl
                   bg-clip-text bg-gradient-to-r from-violet-100 to-violet-900
                    tracking-wide uppercase 
                   ">Fetured Services</h2>
                   <p className="mt-2 text-xl leading-8
-                     italic tracking-tight text-white
+                     italic tracking-tight text-slate-400/[0.5]
                    sm:text-2xl">Client Bliss: Satisfaction Guaranteed !</p>
             </div>
         </div>
@@ -36,12 +36,14 @@ const Services = () => {
                 servicedata.map((service:Service)=>(
                    <div key={service.id} className="flex justify-center" >
                     <div className="relative">
-                        {/* <div className="text-5xl -mt-8 absolute">
-                            {course.id}
+                        {/* <div className=" text-9xl  font-bold -mt-24 text-slate-500/[0.5]
+                        dark:text-slate-400/[0.5] absolute">
+                            {service.id}
                         </div> */}
+                       
                     <BackgroundGradient
                     className="flex flex-col rounded-[22px] bg-white
-                      dark:bg-zinc-900 overflow-hidden items-center h-full max-w-sm p-4 sm:p-12 " 
+                      dark:bg-transparent dark:text-white  overflow-hidden items-center h-full max-w-sm p-4 sm:p-12 " 
                     >
                        <Image
           src={service.icon}
@@ -50,11 +52,10 @@ const Services = () => {
           width="100"
           className=" object-cover mb-2"
         />
-         
-                        <div className=" flex flex-col items-center
+         <div className=" flex flex-col items-center
                         text-center flex-grow
                         ">
-                          <p>{service.title}</p>
+                          <p className="text-2xl font-semibold">{service.title}</p>
                           <p>{service.description}</p>
                           {/* <Link href={`/courses/${course.slug}`}>
                             Learn More

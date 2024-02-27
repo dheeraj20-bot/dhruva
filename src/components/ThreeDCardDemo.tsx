@@ -12,13 +12,13 @@ export function ThreeDCardDemo() {
     
     <div className="flex  flex-col  justify-center items-center mt-20">
        <div className="text-center">
-                  <h2 className="text-2xl  font-bold text-transparent md:text-6xl
+                  <h2 className="text-2xl  font-bold text-transparent md:text-5xl
                   bg-clip-text bg-gradient-to-r from-violet-100 to-violet-900
                    tracking-wide uppercase 
                   ">Innovation in Action!</h2>
-                  <p className="mt-2 text-xl leading-8
-                     italic tracking-tight text-white
-                   sm:text-2xl">Discover the cutting-edge work of our 
+                  <p className="mt-2 text-base md:text-xl leading-8
+                     italic tracking-tight text-slate-600 dark:text-slate-400
+                   sm:text-xl">Discover the cutting-edge work of our 
                    clients, setting new standards in innovation!</p>
         </div>
 

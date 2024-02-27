@@ -2,6 +2,7 @@ import code from "@/assets/code.png"
 import marekting from "@/assets/marketing.png"
 import content from "@/assets/blog_7862079.png"
 
+
 interface Service {
   id: number;
   title: string;
@@ -29,7 +30,7 @@ export const servicedata: Service[] =   [
     {
       "id": 3,
       "title": "Content Creation",
-      "description": "Producing compelling content that resonates with your audience and boosts engagement.",
+      "description": "We ensure your content is strategically crafted to rank well in search results.",
       "icon": content,
       "isFeatured": true
     },
