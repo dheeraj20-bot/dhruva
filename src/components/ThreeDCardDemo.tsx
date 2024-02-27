@@ -10,7 +10,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 export function ThreeDCardDemo() {
   return (
     
-    <div className="flex flex-row  justify-center items-center mt-20">
+    <div className="flex  flex-col  justify-center items-center mt-20">
        <div className="text-center">
                   <h2 className="text-2xl  font-bold text-transparent md:text-6xl
                   bg-clip-text bg-gradient-to-r from-violet-100 to-violet-900
@@ -22,9 +22,7 @@ export function ThreeDCardDemo() {
                    clients, setting new standards in innovation!</p>
         </div>
 
-    <div className="fl  ex  space-x-0   lg:space-x-20  flex-col lg:flex-row justify-center items-center mt-6">
-      
-     
+    <div className="flex  space-x-0   lg:space-x-20  flex-col lg:flex-row justify-center items-center mt-6">
 
      <CardContainer className="inter-var px-3 ">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
