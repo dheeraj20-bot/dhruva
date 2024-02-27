@@ -10,7 +10,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 export function ThreeDCardDemo() {
   return (
     
-    <div className="flex flex-col  justify-center items-center mt-20">
+    <div className="flex flex-row  justify-center items-center mt-20">
        <div className="text-center">
                   <h2 className="text-2xl  font-bold text-transparent md:text-6xl
                   bg-clip-text bg-gradient-to-r from-violet-100 to-violet-900
