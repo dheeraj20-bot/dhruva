@@ -1,12 +1,13 @@
 'use client'
-import Services from "@/components/Services";
+
+import { BentoGridThirdDemo } from "@/components/BentoGrid"
 
 
 
 export default function dhruvaPage(){
     return(
         <div>
-            <Services/>
+        <BentoGridThirdDemo/>
         </div>
     )
 }
