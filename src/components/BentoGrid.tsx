@@ -314,7 +314,7 @@ const items = [
     title: "Grow Online",
     description: (
       <span className="text-sm">
-        Leverage Google's expertise in the medical niche and marketing 
+        Leverage Google &apos s expertise in the medical niche and marketing 
         experience to grow your potential clients.
       </span>
     ),
@@ -338,7 +338,7 @@ const items = [
     title: "The Future is Here:",
     description: (
       <span className="text-sm">
-        Discover the AI solution that's perfect for you. Browse our 
+        Discover the AI solution that &apos s perfect for you. Browse our 
         selection of tools and unleash your potential.
       </span>
     ),
@@ -352,7 +352,7 @@ const items = [
     description: (
       <span className="text-sm">
         We design and develop impactful websites using WordPress.
-         Unleash your brand's potential.
+         Unleash your brand &apos s potential.
       </span>
     ),
     header: <SkeletonFive />,
