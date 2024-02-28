@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import Chatbot from "@/components/ChatBot";
 import { Footer } from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins( {weight: '400', subsets: ["devanagari"] });
 
 export const metadata: Metadata = {
   title: "DhruvaCode  |  Let's Make Internet Magic Happen!",
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <div className="relative  flex items-center justify-center">
         <Navbar /> 
         <Chatbot/>

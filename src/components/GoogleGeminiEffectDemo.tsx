@@ -53,20 +53,16 @@ interface Person {
     
     <GoogleGeminiEffect
        title="Build with Dhruvacode"
-       description="Showcase specific services:
-        Briefly mention areas of expertise like SEO, 
-        social media marketing, content marketing, email marketing, or paid advertising"
+       description="Harnessing the power of AI, we engineer specialized medical solutions and navigate the market to empower healthcare professionals. 
+       We translate foresight into reality for the medical field."
         pathLengths={[
           pathLengthFirst,
           pathLengthSecond,
           pathLengthThird,
           pathLengthFourth,
           pathLengthFifth,
-        ]}
-      />
-    {/* <div className=" hidden sm:flex  flex-row items-center justify-center translate-y-72 w-full">
-      <AnimatedTooltip items={people} />
-    </div> */}
+        ]}/>
+   
       
     </div>
   );

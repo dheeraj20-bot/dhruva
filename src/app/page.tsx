@@ -1,8 +1,8 @@
-import Services from "@/components/Services";
 import { ThreeDCardDemo } from "@/components/ThreeDCardDemo";
 import Image from "next/image";
 import { GoogleGeminiEffectDemo } from "@/components/GoogleGeminiEffectDemo";
-import AboutUs from "@/components/AboutUs";
+import {TextRevealCardPreview} from "@/components/CtaSection"
+import {BentoGridThirdDemo} from "@/components/BentoGrid"
 
 export default function Home() {
 
@@ -12,11 +12,12 @@ export default function Home() {
    rounded-md relative  -mb-32 sm:mb-0 overflow-clip">
       <GoogleGeminiEffectDemo/>
       </div>
-      {/* <AboutUs/> */}
-      <Services/>
+       <div className="p-4 sm:pt-20">
+       <BentoGridThirdDemo/>
+       </div>
     <ThreeDCardDemo/>
+    <TextRevealCardPreview/>
     </main>
-    
   );
 }
 
