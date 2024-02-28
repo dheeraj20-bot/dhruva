@@ -11,7 +11,7 @@ export function TextRevealCardPreview() {
     <div className="flex items-center p-2 justify-center bg-[#0E0E10] h-[40rem] rounded-2xl w-full">
       <TextRevealCard
         text="You know the business"
-        revealText="I know the chemistry "
+        revealText="We know the Market"
       >
         <TextRevealCardTitle>
           Sometimes, you just need to see it.

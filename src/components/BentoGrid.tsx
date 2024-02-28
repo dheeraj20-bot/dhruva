@@ -352,7 +352,7 @@ const items = [
     description: (
       <span className="text-sm">
         We design and develop impactful websites using WordPress.
-         Unleash your brand &apos s potential.
+         Unleash your brand &apos s potential .
       </span>
     ),
     header: <SkeletonFive />,
