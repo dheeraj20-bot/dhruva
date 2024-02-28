@@ -5,7 +5,10 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export function Testimonial() {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black/[0.05] dark:text-white dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+        <div className="text-center text-2xl sm:text-4xl font-bold mb-10 ">
+        Hear from our <span className=" text-transparent bg-clip-text bg-gradient-to-r from-teal-200 to-blue-600" >Happy Clients</span>
+        </div>
       <InfiniteMovingCards
         items={testimonials}
         direction="right"

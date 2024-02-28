@@ -12,17 +12,17 @@ const items = [
     { id:6,title: "Meme Marketing", description: "Ideate and create relatable memes that resonated with the audience." },
    
   ];
+  const servicesHeadline = "Here's what we ";
 
 export function Service() {
   return (
-    <div>
-        <div className="text-center text-white text-2xl sm:text-4xl mb-10 font-bold mt-10">
-        Here &asap s what we will do for you
+    <div id="service">
+        <div className="text-center text-white text-2xl sm:text-4xl mb-10 font-bold mt-0 sm:mt-10">
+       {servicesHeadline} <span className="bg-clip-text text-transparent bg-gradient-to-r  from-violet-400 to-blue-500">offer</span>
 
         </div>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto gap-3 w-11/12">
     {items.map((item) => (
-
       <BackgroundGradient
         key={item.id} // Add a unique key for each item
         className="rounded-[22px]  w-full p-8 group bg-white dark:bg-zinc-900 dark:group-hover:bg-transparent dark:group:hover:shadow-xl  hover:shadow-xl dark:hover:bg-transparent dark:hover:shadow-xl dark:shadow-neutral-800 shadow-lg flex flex-col justify-center items-center00"

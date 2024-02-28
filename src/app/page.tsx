@@ -13,7 +13,7 @@ export default function Home() {
  
 
   return (
-    <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02]">
+    <main className="min-h-screen  bg-black/[0.96] antialiased bg-grid-white/[0.02]">
       <div className="h-screen  w-full top-40
        rounded-md relative  -mb-32 sm:mb-0 overflow-clip">
       <GoogleGeminiEffectDemo/>
@@ -36,7 +36,7 @@ export default function Home() {
    
     <Service/>
 
-      <div>
+      <div className="mt-20">
         <Testimonial/>
         </div> 
    

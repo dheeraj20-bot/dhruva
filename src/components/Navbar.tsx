@@ -19,16 +19,13 @@ export const Navbar = ({ className }: { className?: string }) => {
                   <Image className="w-20 h-20" alt="Dhruvacode_logo" src={Logo}/>
                   </Link>
 
+                    <Link href="#service" scroll={true}>
                     <MenuItem setActive={setActive} active={active} item="Services">
-                       <div className="flex flex-col space-y-4 text-sm">
-                       <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
-                       </div>
                     </MenuItem>
+                    </Link>
+                   
 
-                  <Link href="/contact">
+                  <Link href="#contact">
                     <MenuItem setActive={setActive} active={active} item="Contact us">
                     </MenuItem>
                   </Link>
