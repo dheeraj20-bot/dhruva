@@ -11,9 +11,8 @@ export function ThreeDCardDemo() {
   return (
     
     <div className="flex  flex-col  justify-center items-center mt-20">
-       <div className="text-center text-white text-2xl sm:text-4xl font-bold  ">
-           From Concept to Completion: Our Project  <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">Journey</span>  
-                  
+       <div className="text-center text-white text-2xl p-6 sm:text-4xl font-bold  ">
+           From Concept to Completion: Our Project  <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">Journey</span>     
         </div>
 
     <div className="flex    flex-col lg:flex-row justify-center items-center mt-0 sm:mt-4">

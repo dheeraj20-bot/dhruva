@@ -7,6 +7,7 @@ import {TextRevealCardPreview} from "@/components/CtaSection"
 import {BentoGridThirdDemo} from "@/components/BentoGrid"
 import { AnimatedTooltipPreview } from "@/components/AnimatedTooltipPreview";
 import {Service} from "@/components/Service"
+import { Testimonial } from "@/components/Testimonial";
 
 export default function Home() {
  
@@ -34,7 +35,10 @@ export default function Home() {
     <ThreeDCardDemo/>
    
     <Service/>
-   
+
+      <div>
+        <Testimonial/>
+        </div> 
    
     <TextRevealCardPreview/>
     </main>
