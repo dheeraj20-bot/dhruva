@@ -17,7 +17,7 @@ export function Service() {
   return (
     <div>
         <div className="text-center text-white text-2xl sm:text-4xl mb-10 font-bold mt-10">
-        Here's what we will do for you
+        Here &asap s what we will do for you
 
         </div>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto gap-3 w-11/12">
