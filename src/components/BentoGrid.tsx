@@ -4,14 +4,15 @@ import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import dheeraj from "@/assets/dheeraj.png"
 import {
-  IconBoxAlignRightFilled,
+  IconBrandWordpress,
   IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
+  IconBrandMeta,
+  IconBrandGoogle,
+  IconRobot,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+
 
 export function BentoGridThirdDemo() {
   return (
@@ -198,10 +199,9 @@ const SkeletonFour = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Just code in Vanilla Javascript
-        </p>
+        Seamless Live Translation in Your Pocket with Lingo</p>
         <p className="border border-red-500 bg-red-100 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Delusional
+        Lingo
         </p>
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
@@ -213,10 +213,10 @@ const SkeletonFour = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Tailwind CSS is cool, you know
+        Secure & Reliable Face Recognition with Netra
         </p>
         <p className="border border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Sensible
+          Netra
         </p>
       </motion.div>
       <motion.div
@@ -231,10 +231,10 @@ const SkeletonFour = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          I love angular, RSC, and Redux.
+        Your All-in-One BI Tool for Visualization
         </p>
         <p className="border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Helpless
+        Dantansh
         </p>
       </motion.div>
     </motion.div>
@@ -284,15 +284,14 @@ const SkeletonFive = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="text-xs text-neutral-500">
-          There are a lot of cool framerworks out there like React, Angular,
-          Vue, Svelte that can make your life ....
+        Hi! How do you create and manage content on your website?
         </p>
       </motion.div>
       <motion.div
         variants={variantsSecond}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
+        className="flex flex-row rounded-full h-10  border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
-        <p className="text-xs text-neutral-500">Use Wordpress.</p>
+        <p className="text-xs text-neutral-500">We use WordPress 🚀</p>
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
       </motion.div>
     </motion.div>
@@ -300,10 +299,11 @@ const SkeletonFive = () => {
 };
 const items = [
   {
-    title: "AI Content Generation",
+    title: "Create Impact",
     description: (
       <span className="text-sm">
-        Experience the power of AI in generating unique content.
+        AI personalizes content based on audience preferences,
+        while human empathy infuses it with emotional depth and connection.
       </span>
     ),
     header: <SkeletonOne />,
@@ -311,48 +311,52 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Automated Proofreading",
+    title: "Grow Online",
     description: (
       <span className="text-sm">
-        Let AI handle the proofreading of your documents.
+        Leverage Google's expertise in the medical niche and marketing 
+        experience to grow your potential clients.
       </span>
     ),
     header: <SkeletonTwo />,
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    icon: <IconBrandGoogle className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Contextual Suggestions",
+    title: "Meta Ads",
     description: (
       <span className="text-sm">
-        Get AI-powered suggestions based on your writing context.
+       Crafting effective Meta Ads requires compelling headlines and descriptions that grab attention, spark curiosity, 
+       and ultimately lead users to click
       </span>
     ),
     header: <SkeletonThree />,
     className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    icon: <IconBrandMeta className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Sentiment Analysis",
+    title: "The Future is Here:",
     description: (
       <span className="text-sm">
-        Understand the sentiment of your text with AI analysis.
+        Discover the AI solution that's perfect for you. Browse our 
+        selection of tools and unleash your potential.
       </span>
     ),
     header: <SkeletonFour />,
     className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    icon: <IconRobot className="h-4 w-4 text-neutral-500" />,
   },
 
   {
-    title: "Text Summarization",
+    title: "Web Presence",
     description: (
       <span className="text-sm">
-        Summarize your lengthy documents with AI technology.
+        We design and develop impactful websites using WordPress.
+         Unleash your brand's potential.
       </span>
     ),
     header: <SkeletonFive />,
     className: "md:col-span-1",
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+    icon: <IconBrandWordpress className="h-4 w-4 text-neutral-500" />,
   },
 ];

@@ -11,18 +11,12 @@ export function ThreeDCardDemo() {
   return (
     
     <div className="flex  flex-col  justify-center items-center mt-20">
-       <div className="text-center">
-                  <h2 className="text-2xl  font-bold text-transparent md:text-5xl
-                  bg-clip-text bg-gradient-to-r from-violet-100 to-violet-900
-                   tracking-wide uppercase 
-                  ">Innovation in Action!</h2>
-                  <p className="mt-2 text-base md:text-xl leading-8
-                     italic tracking-tight text-slate-600 dark:text-slate-400
-                   sm:text-xl">Discover the cutting-edge work of our 
-                   clients, setting new standards in innovation!</p>
+       <div className="text-center text-white text-2xl sm:text-4xl font-bold  ">
+           From Concept to Completion: Our Project  <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">Journey</span>  
+                  
         </div>
 
-    <div className="flex  space-x-0   lg:space-x-20  flex-col lg:flex-row justify-center items-center mt-6">
+    <div className="flex    flex-col lg:flex-row justify-center items-center mt-0 sm:mt-4">
 
      <CardContainer className="inter-var px-3 ">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
@@ -52,7 +46,7 @@ export function ThreeDCardDemo() {
       </CardBody>
     </CardContainer>
 
-    <CardContainer className="inter-var px-3 ">
+    <CardContainer className="inter-var -mt-20 sm:mt-0 px-3 ">
     <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
