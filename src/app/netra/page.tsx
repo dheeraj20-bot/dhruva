@@ -8,6 +8,5 @@ export default function Netra() {
    rounded-md relative  overflow-clip"
   >
        <GoogleGeminiEffectDemo/>
-    
   </div>;
 }

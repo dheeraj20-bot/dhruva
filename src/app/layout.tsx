@@ -10,7 +10,7 @@ const poppins = Poppins( {weight: '400', subsets: ["devanagari"] });
 export const metadata: Metadata = {
   title: "DhruvaCode  |  Let's Make Internet Magic Happen!",
   description: "Where creativity meets strategy, and clicks turn into conversions Let's make your online dreams a reality",
-  keywords:"Web Desiging , SEO in Turkey , Web Development in turkey , "
+  keywords:"Web Desiging , SEO in Turkey , Web Development in turkey"
 };
 
 export default function RootLayout({

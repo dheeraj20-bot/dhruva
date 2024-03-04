@@ -3,6 +3,7 @@ import React from "react";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import dheeraj from "@/assets/dheeraj.png"
 import ufuk from "@/assets/ufuk.jpeg"
+import nikita from "@/assets/nikita.jpg"
 const people = [
   {
     id: 1,
@@ -16,6 +17,13 @@ const people = [
     name: "Ufuk berk",
     designation: "Business Development",
     image: ufuk
+  },
+ 
+  {
+    id: 3,
+    name: "Nikita Shekhawat",
+    designation: "Content Strategist",
+    image: nikita
   },
  
 ];
