@@ -11,6 +11,7 @@ interface Service {
   isFeatured: boolean;
 }
 
+
 export const servicedata: Service[] =   [
    
     {
@@ -43,3 +44,5 @@ export const servicedata: Service[] =   [
     //   "isFeatured": false
     // }
   ]
+
+

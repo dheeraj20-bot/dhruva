@@ -30,10 +30,7 @@ const config: Config = {
         "gradient-conic":
         "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      animation:{
-        spotlight: "spotlight 2s ease .75s 1 forwards",
-        scroll:"scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-      },
+    
       keyframes: {
         spotlight: {
           "0%": {
@@ -46,11 +43,7 @@ const config: Config = {
           },
           
         },
-        scroll:{
-          to:{
-            transform: "translate(calc(-50% - 0.5rem))"
-          }
-        }
+        
       },
 
     },

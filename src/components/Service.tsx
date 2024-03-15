@@ -1,7 +1,16 @@
 "use client";
 import React from "react";
 import { BackgroundGradient } from "./ui/background-gradient";
-import { IconAppWindow } from "@tabler/icons-react";
+import mongodb from "@/assets/mongodb.png"
+import express from "@/assets/expressjs.png"
+import firebase from "@/assets/firebase.png"
+import django from "@/assets/django.png"
+import tailwind from "@/assets/tailwindcss.png"
+import Image from "next/image";
+import node from "@/assets/node.webp"
+import nextjs from "@/assets/nextjs.svg"
+import framer from "@/assets/framer.webp"
+
 
 const items = [
     { id:1, title: "Content Production", description: "Our team will shoot high quality videos for your content." },
@@ -12,34 +21,81 @@ const items = [
     { id:6,title: "Meme Marketing", description: "Ideate and create relatable memes that resonated with the audience." },
    
   ];
-  const servicesHeadline = "Here's what we ";
+
+const clients = [
+  {
+    client:mongodb
+  },
+  {
+    client:firebase
+  },
+  {
+    client:express
+  },
+  {
+    client:tailwind
+  },
+  {
+    client:node
+  },
+  {
+    client:nextjs
+  },
+  {
+    client:framer
+  },
+]
+
+const servicesHeadline = "Here's what we";
 
 export function Service() {
   return (
-    <div id="service">
-        <div className="text-center text-white text-2xl sm:text-4xl mb-10 font-bold mt-0 sm:mt-10">
-       {servicesHeadline} <span className="bg-clip-text text-transparent bg-gradient-to-r  from-violet-400 to-blue-500">offer</span>
-
+    <div id="service" className="w-11/12 mb-5 justify-center items-center mt-10  py-5 mx-auto flex flex-col">
+     <div className="text-center  mb-7 text-2xl sm:text-4xl font-bold  " >
+     Secure. Scalable. Tech Stack for{" "}
+      <span className=" bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Healthcare & Fintech.</span>
         </div>
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto gap-3 w-11/12">
-    {items.map((item) => (
-      <BackgroundGradient
-        key={item.id} // Add a unique key for each item
-        className="rounded-[22px]  w-full p-8 group bg-white dark:bg-zinc-900 dark:group-hover:bg-transparent dark:group:hover:shadow-xl  hover:shadow-xl dark:hover:bg-transparent dark:hover:shadow-xl dark:shadow-neutral-800 shadow-lg flex flex-col justify-center items-center00"
-      >
-        <p className="text-xl sm:text-2xl font-bold text-black mt-4 mb-2 dark:text-neutral-200 
-        dark:group-hover:text-black dark:group:hover:shadow-xl">
-          {item.title}
-        </p>
-        <p className="text-sm
-        dark:group-hover:text-black text-neutral-600 dark:text-neutral-400">
-          {item.description}
-        </p>
-      </BackgroundGradient>
-    ))}
-  </div>
+
+      <div className="flex flex-wrap  overflow-hidden  justify-center  gap-7 mb-10">
+         {
+          clients.map((item)=>(
+            <Image src={item.client}  width={70} className=" last:hidden lg:last:block" height={30} alt="client"/>
+          ))
+         }
+      </div>
+       
+      <div className="text-center  mb-7 text-2xl sm:text-4xl font-bold  " >
+      What We Offer 
+{" "}
+      <span className=" bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+      Services
+      </span>
+        </div>
+
+      <div className="mt-4 flex flex-wrap  items-center justify-center mx-auto w-11/12 gap-4">
+            {
+              items.map((item)=>(
+                <BackgroundGradient>
+                   <div  key={item.id} className={` rounded-2xl shadow-md  max-w-sm p-4  sm:p-10 bg-white ${
+          item.id % 2 === 1 ? 'h-[27rem]' : 'h-[20rem]' }`}>
+                    <h1 className=" text-3xl  font-semibold mb-10">{item.title}</h1>
+                    <p className=" text-pretty font-medium">{item.description}</p>
+                  </div>
+                </BackgroundGradient>
+              ))
+            }
+      </div>
+       
     </div>
+  );
+
+        
 
   
-  );
 }
+
+
+
+
+    
+  
