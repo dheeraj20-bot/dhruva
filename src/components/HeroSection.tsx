@@ -17,7 +17,7 @@ const HeroSection = () => {
    </h1>
    <Image className='absolute  bottom-[12.5rem] hidden xl:block  lg:right-[6rem] xl:right-[8rem] ' src={high} width={60} height={40} alt=''/>
   <p className='text-center mb-10 text-base px-3 lg:text-xl w-full lg:w-1/2
-   text-slate-700 '>Empower your business with a website that's 
+   text-slate-700 '>Empower your business with a website thats 
    more than just pixels on a screen</p>
    <button className='bg-black flex gap-4 items-center text-white py-4 text-xl px-10 font-semibold  rounded-3xl  border-b 
     border-b-violet-900 shadow-2xl shadow-black/90 '>

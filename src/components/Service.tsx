@@ -10,6 +10,7 @@ import Image from "next/image";
 import node from "@/assets/node.webp"
 import nextjs from "@/assets/nextjs.svg"
 import framer from "@/assets/framer.webp"
+import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 
 const items = [
@@ -58,8 +59,9 @@ export function Service() {
 
       <div className="flex flex-wrap  overflow-hidden  justify-center  gap-7 mb-10">
          {
-          clients.map((item)=>(
-            <Image src={item.client}  width={70} className=" last:hidden lg:last:block" height={30} alt="client"/>
+          clients.map((item,index)=>(
+            
+            <Image key={index} src={item.client}  width={70} className=" last:hidden lg:last:block" height={30} alt="client"/>
           ))
          }
       </div>
@@ -75,8 +77,8 @@ export function Service() {
       <div className="mt-4 flex flex-wrap  items-center justify-center mx-auto w-11/12 gap-4">
             {
               items.map((item)=>(
-                <BackgroundGradient>
-                   <div  key={item.id} className={` rounded-2xl shadow-md  max-w-sm p-4  sm:p-10 bg-white ${
+                <BackgroundGradient key={item.id}>
+                   <div className={` rounded-2xl shadow-md  max-w-sm p-4  sm:p-10 bg-white ${
           item.id % 2 === 1 ? 'h-[27rem]' : 'h-[20rem]' }`}>
                     <h1 className=" text-3xl  font-semibold mb-10">{item.title}</h1>
                     <p className=" text-pretty font-medium">{item.description}</p>
