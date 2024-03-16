@@ -78,8 +78,8 @@ export function Service() {
             {
               items.map((item)=>(
                 <BackgroundGradient key={item.id}>
-                   <div className={` rounded-2xl shadow-md  max-w-sm p-4  sm:p-10 bg-white ${
-          item.id % 2 === 1 ? 'h-[27rem]' : 'h-[20rem]' }`}>
+                   <div className={` rounded-2xl shadow-md  w-[24rem] p-4  sm:p-10 bg-white ${
+          item.id % 2 === 1 ? 'h-[27rem]' : 'h-[24rem]' }`}>
                     <h1 className=" text-3xl  font-semibold mb-10">{item.title}</h1>
                     <p className=" text-pretty font-medium">{item.description}</p>
                   </div>

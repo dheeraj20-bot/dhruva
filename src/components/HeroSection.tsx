@@ -15,7 +15,7 @@ const HeroSection = () => {
      Expert Marketing Secure business
     </span>
    </h1>
-   <Image className='absolute  bottom-[12.5rem] hidden xl:block  lg:right-[6rem] xl:right-[8rem] ' src={high} width={60} height={40} alt=''/>
+   <Image className='absolute  bottom-[12.5rem] hidden xl:block  lg:right-[6rem] xl:right-[5rem] ' src={high} width={60} height={40} alt=''/>
   <p className='text-center mb-10 text-base px-3 lg:text-xl w-full lg:w-1/2
    text-slate-700 '>Empower your business with a website thats 
    more than just pixels on a screen</p>
