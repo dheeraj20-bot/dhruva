@@ -9,6 +9,7 @@ import HeroSection from "@/components/HeroSection";
 import WorkSection from "@/components/WorkSection";
 import { Globe } from "@/components/Globe";
 import Contribution from "@/components/Contribution";
+import Pricing from "@/components/Pricing";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
        <Service/>
         <Globe/>
         <Contribution/>
+        <Pricing/>
     </main>
   );
 }

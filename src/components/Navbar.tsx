@@ -16,7 +16,7 @@ const navlinks = [
   },
   {
    link:"Pricing",
-   url:"#work"
+   url:"#pricing"
   },
   {
    link:"Products",

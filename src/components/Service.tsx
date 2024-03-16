@@ -4,24 +4,14 @@ import { BackgroundGradient } from "./ui/background-gradient";
 import mongodb from "@/assets/mongodb.png"
 import express from "@/assets/expressjs.png"
 import firebase from "@/assets/firebase.png"
-import django from "@/assets/django.png"
 import tailwind from "@/assets/tailwindcss.png"
 import Image from "next/image";
 import node from "@/assets/node.webp"
 import nextjs from "@/assets/nextjs.svg"
 import framer from "@/assets/framer.webp"
-import { div } from "three/examples/jsm/nodes/Nodes.js";
+import code from "@/assets/code.png"
+import { items } from "@/data/ServiceData";
 
-
-const items = [
-    { id:1, title: "Content Production", description: "Our team will shoot high quality videos for your content." },
-    { id:2,title: "Research & Writing", description: "For each content, we will do the research and write compelling copies for you." },
-    { id:3,title: "Video Editing", description: "We will create captivating videos using fast paced video editing." },
-    { id:4,title: "Graphics Designing", description: "Our visual design experts will create aesthetic designs that stand out." },
-    { id:5,title: "Social Media Management", description: "End-to-end social media management to optimise content and drive engagement." },
-    { id:6,title: "Meme Marketing", description: "Ideate and create relatable memes that resonated with the audience." },
-   
-  ];
 
 const clients = [
   {
@@ -66,7 +56,7 @@ export function Service() {
          }
       </div>
        
-      <div className="text-center  mb-7 text-2xl sm:text-4xl font-bold  " >
+      <div className="text-center  mt-4 sm:mt-24   mb-7 text-2xl sm:text-4xl font-bold  " >
       What We Offer 
 {" "}
       <span className=" bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
@@ -78,8 +68,14 @@ export function Service() {
             {
               items.map((item)=>(
                 <BackgroundGradient key={item.id}>
-                   <div className={` rounded-2xl shadow-md  w-[24rem] p-4  sm:p-10 bg-white ${
+                   <div className={` rounded-2xl shadow-md  w-[20rem] p-4  sm:p-10 bg-white ${
           item.id % 2 === 1 ? 'h-[27rem]' : 'h-[24rem]' }`}>
+                       <div className="w-[5rem] rounded-full items-center mb-7 flex">
+                      
+                        <Image src={item.src} width={90} height={90} className="" alt=""/>
+                   
+                       </div>
+                      
                     <h1 className=" text-3xl  font-semibold mb-10">{item.title}</h1>
                     <p className=" text-pretty font-medium">{item.description}</p>
                   </div>
@@ -87,7 +83,7 @@ export function Service() {
               ))
             }
       </div>
-       
+        
     </div>
   );
 

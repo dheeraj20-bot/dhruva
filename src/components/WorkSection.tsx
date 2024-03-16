@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const WorkSection = () => {
   return (
-    <div id='work' className="w-full mb-2 mt-0 lg:-mt-20 
+    <div id='work' className="w-full px-2 mb-2 overflow-hidden  -mt-[8rem]  sm:-mt-20 
     mx-auto flex items-center justify-center flex-col">
       <Image
         src={work}

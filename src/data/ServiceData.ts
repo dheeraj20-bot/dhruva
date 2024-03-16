@@ -1,48 +1,27 @@
-import code from "@/assets/code.png"
-import marekting from "@/assets/marketing.png"
-import content from "@/assets/blog_7862079.png"
+import web from "@/assets/development.png"
+import Research from "@/assets/research.png"
+import video from "@/assets/video.png"
+import content from "@/assets/content.png"
+import social from "@/assets/market.png"
+import meme from "@/assets/meme.png"
 
 
 interface Service {
   id: number;
   title: string;
   description: string;
-  icon: any;
-  isFeatured: boolean;
+  src:string
 }
 
 
-export const servicedata: Service[] =   [
-   
-    {
-      "id": 1,
-      "title": "Digital Marketing",
-      "description": "Crafting tailored strategies to expand your online presence and drive growth.",
-      "icon": marekting,
-      "isFeatured": true
-    },
-    {
-      "id": 2,
-      "title": "Web Development",
-      "description": "Providing Websites in React js , Next js and Wordpress so your customer can ",
-      "icon": code,
-      "isFeatured": true
-    },
-    {
-      "id": 3,
-      "title": "Content Creation",
-      "description": "We ensure your content is strategically crafted to rank well in search results.",
-      "icon": content,
-      "isFeatured": true
-    },
-
-    // {
-    //   "id": 4,
-    //   "title": "SEO Optimization",
-    //   "description": "Improving search engine visibility and driving organic traffic to your website.",
-    //   "icon": "seo-icon.png",
-    //   "isFeatured": false
-    // }
-  ]
-
-
+export const items = [
+  { id:1,
+    src:content,
+    title: "Content Production", description: "Our team will shoot high quality videos for your content." },
+  { id:2, src:Research,title: "Research & Writing", description: "For each content, we will do the research and write compelling copies for you." },
+  { id:3,src:video,title: "Video Editing", description: "We will create captivating videos using fast paced video editing." },
+  { id:4,src:web,title: "Graphics Designing", description: "Our visual design experts will create aesthetic designs that stand out." },
+  { id:5,src:social,title: "Social Media Management", description: "End-to-end social media management to optimise content and drive engagement." },
+  { id:6,src:meme,title: "Meme Marketing", description: "Ideate and create relatable memes that resonated with the audience." },
+ 
+];

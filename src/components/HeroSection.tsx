@@ -29,7 +29,7 @@ const HeroSection = () => {
    <div className="text-center  mb-3 text-2xl sm:text-4xl font-bold  " >
         We build the tools, you shape your  <span className=" bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">future</span>
         </div>
-        <div className="flex  gap-3  items-center justify-center mb- text-base sm:text-xl ">  
+        <div className="flex  gap-3  items-center justify-center  text-base sm:text-xl ">  
             <div className="-mt-6">
               <p>Founded by </p>
                 </div>
