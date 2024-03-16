@@ -41,7 +41,7 @@ const servicesHeadline = "Here's what we";
 
 export function Service() {
   return (
-    <div id="service" className="w-11/12 mb-5 justify-center items-center mt-10  py-5 mx-auto flex flex-col">
+    <div id="service" className="w-11/12 mb-10 justify-center items-center mt-10  py-5 mx-auto flex flex-col">
      <div className="text-center  mb-7 text-2xl sm:text-4xl font-bold  " >
      Secure. Scalable. Tech Stack for{" "}
       <span className=" bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Healthcare & Fintech.</span>

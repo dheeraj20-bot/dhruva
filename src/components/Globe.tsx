@@ -412,11 +412,13 @@ export function Globe() {
           className="div"
         >
           <h2 className="text-center text-xl md:text-4xl font-bold text-black">
-          We Value Our Customers
+          We Value Our{" "} <span className=" bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            Customers
+          </span>
+
           </h2>
-          <p className="text-center mb-7 text-base md:text-xl font-normal text-neutral-700 max-w-md mt-2 mx-auto">
-          At our company, customer satisfaction is our top{" "}
-          <span className=" bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">priority</span>
+          <p className="text-center mb-10 text-base md:text-xl font-normal text-neutral-700 max-w-md mt-2 mx-auto">
+          At our company, Customer satisfaction is our top priority
           </p>
         </motion.div>
         

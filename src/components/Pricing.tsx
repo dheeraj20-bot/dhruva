@@ -16,7 +16,7 @@ const Pricing = () => {
         
         {
           pricing.map((item)=>(
-            <div  key={item.id} className='w-[10rem] shadow  shadow-blue-800  even:bg-blue-800 max-lg:w-full h-[43rem] px-6 
+            <div  key={item.id} className=' w-full sm:w-[10rem] shadow  shadow-blue-800  even:bg-blue-800 max-lg:w-full h-[43rem] px-6 
              border border-gray-600 rounded-[2rem] mx-auto  lg:w-[35rem] even:py-12 odd:my-4 odd:py-8
                '>
               <h4 className={`${item.id==="0"?" text-red-700":" text-white"} text-2xl
