@@ -3,7 +3,7 @@ import { animate, motion, useMotionTemplate, useMotionValue } from 'framer-motio
 import React, { useEffect } from 'react'
 import { Billboard, Stars, Text, Text3D } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-
+import { FiArrowRight } from "react-icons/fi";
 
 
 const COLORS = ['#13FFAA',"#1E67C6","#CE84CF","#DD335C"]
@@ -31,7 +31,7 @@ export const HeroSection = () => {
     className='relative grid min-h-screen place-content-center overflow-hidden  px-4 py-24 text-gray-200'>
         <div className="relative z-10 flex flex-col items-center">
         <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 py-1.5 text-sm">
-          Beta Now Live!
+         whatever you want !
         </span>
         <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center 
         text-3xl font-medium leading-tight text-transparent sm:text-5xl
@@ -55,8 +55,8 @@ export const HeroSection = () => {
           }}
           className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
         >
-          Start free trial
-          {/* <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" /> */}
+         Book a Call
+          <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
         </motion.button>
        
       </div>
