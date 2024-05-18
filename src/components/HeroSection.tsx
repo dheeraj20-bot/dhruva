@@ -1,50 +1,72 @@
-import React from 'react'
-import high from "@/assets/high.svg"
-import Image from 'next/image'
-import { IconTrendingUp } from '@tabler/icons-react';
-import { AnimatedTooltipPreview } from './AnimatedTooltipPreview';
+'use client'
+import { animate, motion, useMotionTemplate, useMotionValue } from 'framer-motion'
+import React, { useEffect } from 'react'
+import { Billboard, Stars, Text, Text3D } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 
-const HeroSection = () => {
+
+
+const COLORS = ['#13FFAA',"#1E67C6","#CE84CF","#DD335C"]
+
+export const HeroSection = () => {
+    const color = useMotionValue(COLORS[0])
+   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%,#020617 50%,${color})`
+   const border = useMotionTemplate`1px solid ${color}`;
+   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
+   
+   useEffect(()=>{
+     animate(color,COLORS,{
+        ease:'easeInOut',
+        duration:10,
+        repeat:Infinity,
+        repeatType:"mirror"
+     })
+   },[])
   return (
-    <div className='h-screen  w-full mt-12 lg:mt-28
-    relative  mb-2 sm:mb-0 overflow-clip' >
-       <div className='flex  relative lg:w-[80%]   mx-auto flex-col  items-center'>
-    <h1 className='text-4xl  mb-8 lg:text-6xl !leading-snug text-gray-800 text-center font-bold'>
-    From Strategy to Sales: Your All-in-One Marketing Partner for {" "}  
-    <span className='bg-clip-text text-transparent  bg-gradient-to-r from-teal-800 to-blue-600'>
-    Healthcare
-    </span>
-   </h1>
-   <Image className='absolute  bottom-[12.5rem] hidden xl:block  lg:right-[6rem] xl:right-[2rem] ' src={high} width={60} height={40} alt=''/>
-  <p className='text-center mb-10 text-base px-3 lg:text-xl w-full lg:w-1/2
-   text-slate-700 '>Empower your business with a website thats 
-   more than just pixels on a screen</p>
-   <button className='bg-black flex gap-4 items-center text-white py-4 text-xl px-10 font-semibold  rounded-3xl  border-b 
-    border-b-violet-900 shadow-2xl shadow-black/90 '>
-    Book a Call <IconTrendingUp stroke={2} />
-   </button>
+    <motion.section 
    
-    </div>
-    <div className='mt-10'>
-   <div className="text-center  mb-3 text-2xl sm:text-4xl font-bold  " >
-        We build the tools, you shape your  <span className=" bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">future</span>
-        </div>
-        <div className="flex  gap-3 mb-10 items-center  justify-center  text-base sm:text-xl ">  
-            <div className="">
-              <p>Founded by </p>
-                </div>
-
-                <div className=''>
-                <AnimatedTooltipPreview/>
-                </div>
-        </div>
-   
-
-   </div>
-    </div>
-    
-
+     style={{
+        backgroundImage
+     }}
+    className='relative grid min-h-screen place-content-center overflow-hidden  px-4 py-24 text-gray-200'>
+        <div className="relative z-10 flex flex-col items-center">
+        <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 py-1.5 text-sm">
+          Beta Now Live!
+        </span>
+        <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center 
+        text-3xl font-medium leading-tight text-transparent sm:text-5xl
+         sm:leading-tight md:text-7xl md:leading-tight">
+          Decrease your SaaS churn by over 90%
+        </h1>
+        <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
+        Revolutionize Operations, Enhance Efficiency,
+         and Drive Growth with Our Cutting-Edge SaaS Platform
+        </p>
+        <motion.button
+          style={{
+            border,
+            boxShadow,
+          }}
+          whileHover={{
+            scale: 1.015,
+          }}
+          whileTap={{
+            scale: 0.985,
+          }}
+          className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
+        >
+          Start free trial
+          {/* <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" /> */}
+        </motion.button>
+       
+      </div>
+      <div className="absolute inset-0 z-0">
+        <Canvas>
+          <Stars radius={50} count={2500} factor={4} fade speed={2} />
+         
+        </Canvas>
+      </div>
+    </motion.section>
   )
 }
 
-export default HeroSection

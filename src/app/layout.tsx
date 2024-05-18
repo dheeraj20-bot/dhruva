@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
-import Chatbot from "@/components/ChatBot";
 import { Footer } from "@/components/Footer";
 
 const poppins = Poppins( {weight: '400', subsets: ["devanagari"] });
@@ -21,12 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <body className={poppins.className}>
-        <div className="relative  flex items-center justify-center">
+        <div className="flex flex-col h-screen">
         <Navbar /> 
-        <Chatbot/>
-        </div>
       {children}
       <Footer/>
+      </div>
       </body>
     </html>
   );
