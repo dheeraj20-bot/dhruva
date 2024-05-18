@@ -24,7 +24,6 @@ export const HeroSection = () => {
    },[])
   return (
     <motion.section 
-   
      style={{
         backgroundImage
      }}
