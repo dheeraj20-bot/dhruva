@@ -1,10 +1,9 @@
 'use client'
 import { animate, motion, useMotionTemplate, useMotionValue } from 'framer-motion'
 import React, { useEffect } from 'react'
-import { Billboard, Stars, Text, Text3D } from "@react-three/drei";
+import {  Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { FiArrowRight } from "react-icons/fi";
-
 
 const COLORS = ['#13FFAA',"#1E67C6","#CE84CF","#DD335C"]
 
@@ -35,11 +34,9 @@ export const HeroSection = () => {
         <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center 
         text-3xl font-medium leading-tight text-transparent sm:text-5xl
          sm:leading-tight md:text-7xl md:leading-tight">
-          Decrease your SaaS churn by over 90%
-        </h1>
+                  Conversions Down? Build 100% Better</h1>
         <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
-        Revolutionize Operations, Enhance Efficiency,
-         and Drive Growth with Our Cutting-Edge SaaS Platform
+        Watch Your Business Take Flight. We Fuel the Next-Level Journey.
         </p>
         <motion.button
           style={{
