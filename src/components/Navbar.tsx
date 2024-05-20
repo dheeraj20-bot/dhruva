@@ -51,6 +51,7 @@ export const Navbar = ({ className }: { className?: string }) => {
     </Link>
 
     <div className="block sm:hidden">
+
     <Sheet>
   <SheetTrigger>
   <IconMenuDeep stroke={2} />
@@ -59,18 +60,11 @@ export const Navbar = ({ className }: { className?: string }) => {
     <SheetHeader>
       <SheetTitle className="mt-2 mb-6 gradienttext">Welcome to Dhruvacode!</SheetTitle>
     </SheetHeader>
-    <SheetDescription>
-
-      
-      
+  
       <div className=" antialiased flex flex-col space-y-5 text-balance">
-        <SheetClose asChild> 
-        <Link href="/">
-        <h2 
-        className='  bg-clip-text text-transparent bg-gradient-to-b 
-         from-white  to-gray-600 text-sm sm:text-xl font-bold'> Home</h2>
-        </Link>
-    </SheetClose>
+      <SheetClose asChild>
+                <p >Save changes</p>
+      </SheetClose>
 
         <SheetClose asChild>
         <Link href="/#service" >
@@ -88,11 +82,10 @@ export const Navbar = ({ className }: { className?: string }) => {
         </SheetClose>
 
     </div>
-    </SheetDescription>
-    <div className="absolute inset-0 z-0">
+    
+    <div className="absolute inset-0 -z-50">
         <Canvas>
           <Stars radius={50} count={2500} factor={4} fade speed={2} />
-         
         </Canvas>
       </div>
   </SheetContent>

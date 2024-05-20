@@ -4,7 +4,7 @@ import { ServiceSection } from "@/components/ServiceSection";
 
 export default function Home() {
   return (
-    <main className="  bg-space-1 antialiased ">
+    <main className=" bg-space-1 antialiased ">
        <HeroSection/>
        <ServiceSection/>
        {/* <Testimonials/> */}
