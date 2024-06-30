@@ -29,7 +29,7 @@ export const ServiceSection = () => {
         <section className=' py-10 rounded-[4rem]  backdrop-blur-md bg-gradient-to-br  from-slate-900   to-zinc-900 max-w-7xl mx-auto border'>
         <h2 className=' text-3xl mb-6 bg-clip-text text-transparent bg-gradient-to-b 
          from-white  to-gray-600 sm:text-5xl text-center font-bold'>We can Help you in below things..</h2>
-         <div className="flex flex-wrap  space-x-5 justify-center">
+         <div className="flex flex-wrap gap-5 justify-center">
      {services.map((service, index) => (
       <ServiceCard key={index} service={service} />
     ))}
