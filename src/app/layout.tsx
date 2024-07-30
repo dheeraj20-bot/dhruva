@@ -5,7 +5,6 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { GoogleTagManager } from '@next/third-parties/google'
 
-
 const poppins = Poppins( {weight: '400', subsets: ["devanagari"] });
 
 export const metadata: Metadata = {
