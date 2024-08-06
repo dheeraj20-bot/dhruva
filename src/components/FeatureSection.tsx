@@ -56,7 +56,7 @@ export function FeaturesSection() {
   
   return (
     <section className="max-w-7xl mx-auto">
-         <h2 className="text-4xl sm:text-6xl text-center bg-clip-text bg-gradient-to-b py-4 sm:py-10  font-semibold text-transparent from-white to-slate-500">What You Can Expect From Us!</h2>
+         <h2 className="text-4xl px-3 sm:text-5xl text-center bg-clip-text bg-gradient-to-b pt-20 pb-10  font-semibold text-transparent from-white to-slate-500">What You Can Expect From Us!</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  px-3 relative z-10 py-10 ">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
@@ -97,12 +97,13 @@ const Feature = ({
         {icon}
       </div>
       <div className="text-lg font-bold mb-2 relative z-10 px-10">
-        <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
+        <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-emerald-600 transition-all duration-200 origin-center" />
+
         <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100">
           {title}
         </span>
       </div>
-      <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
+      <p className="text-sm text-neutral-700 dark:text-neutral-300 max-w-xs relative z-10 px-10">
         {description}
       </p>
     </div>

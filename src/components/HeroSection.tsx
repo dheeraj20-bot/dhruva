@@ -41,10 +41,10 @@ export const HeroSection = () => {
           text-3xl font-bold leading-tight text-transparent sm:text-5xl
           sm:leading-tight md:text-7xl md:leading-tight"
         >
-         Conversions Stuck? Let's Supercharge Your Website!
+         Conversions Stuck? Let&apos;s Supercharge Your Website!
         </h1>
         <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
-        Elevate Your Business with Next.js, Framer Motion, and  Tailwind CSS.  We Fuel the Next-Level Journey.        </p>
+        Elevate Your Business with Next.js, Framer Motion, and  Tailwind CSS.  We Fuel the Next-Level Journey.</p>
         <motion.button
           style={{
             border,
