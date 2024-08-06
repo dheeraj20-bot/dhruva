@@ -14,56 +14,57 @@ export function FeaturesSection() {
   const features = [
     {
       title: "Built for Everyone",
-      description:
-        "Everyone can Edit/update the content",
+      description: "Everyone can easily edit and update content.",
       icon: <IconTerminal2 />,
     },
     {
-      title: "Ease of use",
-      description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+      title: "Ease of Use",
+      description: "Our interfaces are intuitive and user-friendly, making it as easy as using an Apple.",
       icon: <IconEaseInOut />,
     },
     {
-      title: "Pricing like no other",
-      description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+      title: "Pricing Like No Other",
+      description: "Our prices are the best in the market. No hidden fees, no long-term commitments, and no credit card required.",
       icon: <IconCurrencyDollar />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We deploy application on Vercel & Aws.",
+      title: "100% Uptime Guarantee",
+      description: "We ensure your application is always online with deployments on Vercel and AWS.",
       icon: <IconCloud />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: "Multi-Tenant Architecture",
+      description: "Efficiently share resources without the need for individual licenses or new seats.",
       icon: <IconRouteAltLeft />,
     },
     {
       title: "24/7 Customer Support",
-      description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+      description: "Our dedicated support team is available around the clock to assist you.",
       icon: <IconHelp />,
     },
     {
-      title: "Money back guarantee",
-      description:
-        "If you donot like EveryAI, we will convince you to like us.",
+      title: "Money-Back Guarantee",
+      description: "Not satisfied? We'll work to ensure you are, or you get your money back.",
       icon: <IconAdjustmentsBolt />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "And Everything Else",
+      description: "We cover all your needs, even the ones you haven't thought of yet.",
       icon: <IconHeart />,
     },
   ];
+  
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
+    <section className="max-w-7xl mx-auto">
+         <h2 className="text-4xl sm:text-6xl text-center bg-clip-text bg-gradient-to-b py-4 sm:py-10  font-semibold text-transparent from-white to-slate-500">What You Can Expect From Us!</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  px-3 relative z-10 py-10 ">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}
     </div>
+
+    </section>
+   
   );
 }
 

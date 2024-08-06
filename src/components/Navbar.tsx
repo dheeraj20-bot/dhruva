@@ -1,10 +1,7 @@
 "use client";
-import React, { useState } from "react";
 import Link from "next/link";
-import Logo from "@/assets/dhruvacodelogo.png";
 import Image from "next/image";
 import { IconMenuDeep,IconX } from "@tabler/icons-react";
-import { Button } from "./ui/moving-border";
 import {motion} from "framer-motion"
 import {  Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
@@ -20,12 +17,13 @@ import {
 } from "@/components/ui/sheet"
 
 
+
 export const Navbar = ({ className }: { className?: string }) => {
+
   return (
-    <header className='fixed z-50 top-0 w-full py-5  border-b border-gray-700 px-3 lg:px-20  backdrop-blur-md flex items-center  justify-between'>
+    <header className='fixed z-50 top-0 w-full py-3  border-b border-gray-700 px-3 lg:px-20  backdrop-blur-md flex items-center  justify-between'>
     <Link href="/">
-        <h2 className='  bg-clip-text text-transparent bg-gradient-to-b 
-         from-white  to-gray-600 text-sm sm:text-2xl font-bold'> Druvacode</h2>
+       <Image src="/logo.png"  width={50} height={50} alt="Logo" className="w-20 h-20"/>
     </Link>
    
     
@@ -47,7 +45,7 @@ export const Navbar = ({ className }: { className?: string }) => {
 
    
     <Link className=" hidden sm:inline-block rounded-full bg-gray-600/50 px-3 py-1.5 text-sm" href="/">
-       Explore more
+    Book a Call
     </Link>
 
     <div className="block sm:hidden">
@@ -63,7 +61,7 @@ export const Navbar = ({ className }: { className?: string }) => {
   
       <div className=" antialiased flex flex-col space-y-5 text-balance">
       <SheetClose asChild>
-                <p >Save changes</p>
+                X
       </SheetClose>
 
         <SheetClose asChild>
