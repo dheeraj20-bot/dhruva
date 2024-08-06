@@ -30,7 +30,7 @@ export const HeroSection = () => {
       className='relative grid min-h-screen place-content-center overflow-visible px-4 py-24 text-gray-200' // Set overflow to visible
     >
 
-      <div className="z-10 flex flex-col items-center sticky  top-12">  
+      <div className="z-10 flex flex-col items-center   top-12">  
       <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 py-1.5 text-sm">
           whatever you want !
         </span>
