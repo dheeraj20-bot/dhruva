@@ -21,7 +21,7 @@ import {
 export const Navbar = ({ className }: { className?: string }) => {
 
   return (
-    <header className='fixed z-50 top-0 w-full py-3  border-b border-gray-700 px-3 lg:px-20  backdrop-blur-md flex items-center  justify-between'>
+    <header className='fixed z-50 top-0 w-full   border-b border-gray-700 px-3 lg:px-20  backdrop-blur-md flex items-center  justify-between'>
     <Link href="/">
        <Image src="/logo.png"  width={50} height={50} alt="Logo" className="w-20 h-20"/>
     </Link>
